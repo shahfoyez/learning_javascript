@@ -3,9 +3,45 @@ body{
     max-width: 1200px;
     font-family: 'poppins', serif;
 }
-.show-hide{
-    margin-top: 10px;
-    max-width: 231px;
+.foy-flex{
     display: flex;
+}
+.foy-justify-center{
+    justify-content: center;
+}
+.foy-justify-space-beetween{
     justify-content: space-between;
+}
+.foy-block{
+    display: block;
+}
+.foy-none{
+    display: none;
+}
+.foy-text-center{
+    text-align: center;
+}
+.foy-align-items-center{
+    align-items: center;
+}
+.fow-w-300{
+    max-width: 231px;
+}
+.m-10{
+    margin: 10px;
+}
+.p-10{
+    padding: 10px;
+}
+.ms-10{
+    margin-left: 10px;
+}
+.me-10{
+    margin-right: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mt-10{
+    margin-top: 10px;
 }
