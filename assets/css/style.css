@@ -1,0 +1,11 @@
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'poppins', serif;
+}
+.show-hide{
+    margin-top: 10px;
+    max-width: 231px;
+    display: flex;
+    justify-content: space-between;
+}
