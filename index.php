@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="http://localhost/Javascript/assets/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     </head>
-    <body>
-        
+    <body></body>
         <h1 id="demo">Hello there</h1>
         <div>
             <button onclick="document.getElementById('image').src='http://localhost/Javascript/assets/images/pic_bulboff.gif'">Turn off</button>
@@ -21,10 +20,7 @@
         <button id="text-hide" onclick="document.getElementById('image').style.display='none'">Click to Hide</button>
         <button id="text-hide" onclick="document.getElementById('image').style.display='initial'">Click to Show</button>
         </div>
-        <script src="" async defer></script>
-        <script>
-            var a = document.getElementById("demo").innerHTML = "Hi";
-            console.log(a);
-        </script>
+        <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
+        
     </body>
 </html>
