@@ -18,6 +18,9 @@ body{
 .foy-none{
     display: none;
 }
+.foy-m-0-a{
+    margin: 0 auto;
+}
 .foy-text-center{
     text-align: center;
 }
@@ -26,6 +29,23 @@ body{
 }
 .fow-w-300{
     max-width: 231px;
+}
+.fow-w-400{
+    max-width: 331px;
+}
+.fow-w-500{
+    max-width: 431px;
+}.fow-w-600{
+    max-width: 531px;
+}
+.fow-w-700{
+    max-width: 631px;
+}
+.fow-w-800{
+    max-width: 731px;
+}
+.fow-w-900{
+    max-width: 831px;
 }
 .m-10{
     margin: 10px;
@@ -44,4 +64,7 @@ body{
 }
 .mt-10{
     margin-top: 10px;
+}
+.foy-container {
+    padding: 100px;
 }

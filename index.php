@@ -1,47 +1,40 @@
-<!DOCTYPE html>
-<html>
+<?php include 'shared/header.php';?>
+    <div class="foy-main">
+        <div class="foy-container">
+            <h1 id="demo" class="foy-text-center fow-w-300 foy-m-0-a">Hello there</h1>
+            <div class="foy-text-center">
+                <button
+                    onclick="document.getElementById('image').src='http://localhost/Javascript/assets/images/pic_bulboff.gif'">Turn
+                    off</button>
+                <img id="image" src="http://localhost/Javascript/assets/images/pic_bulboff.gif">
+                <button
+                    onclick="document.getElementById('image').src='http://localhost/Javascript/assets/images/pic_bulbon.gif'">Turn
+                    on</button>
+            </div>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://localhost/Javascript/assets/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-</head>
+            <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10 foy-m-0-a">
+                <button id="text-hide-1" onclick="document.getElementById('image').style.display='none'">Click to Hide</button>
+                <button id="text-hide-2" onclick="document.getElementById('image').style.display='initial'">Click to
+                    Show</button>
+            </div>
 
-<body>
-    <h1 id="demo" class="foy-text-center fow-w-300">Hello there</h1>
-    <div>
-        <button
-            onclick="document.getElementById('image').src='http://localhost/Javascript/assets/images/pic_bulboff.gif'">Turn
-            off</button>
-        <img id="image" src="http://localhost/Javascript/assets/images/pic_bulboff.gif">
-        <button
-            onclick="document.getElementById('image').src='http://localhost/Javascript/assets/images/pic_bulbon.gif'">Turn
-            on</button>
+            <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10 foy-m-0-a">
+                <button id="button-1" onclick="document.getElementById('foy-demo').innerHTML ='Hi!'">Click Here</button>
+                <p id="foy-demo"></p>
+                <button id="button-2" onclick="document.getElementById('foy-demo').innerHTML ='Hello!'">Click Here</button>
+                <button id="button-3" onclick="alert('Are you Sure')">Click</button>
+            </div>  
+            <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10 foy-m-0-a">
+                <button onclick="window.print()">Print this page</button>
+            </div> 
+            <div class="foy-flex fow-w-300 mt-10 foy-m-0-a">
+                <button id="button-2" onclick="myFunction1()">Variable</button>
+                <p id="foy-demo1"></p>
+            </div>  
+        </div>
     </div>
-
-    <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
-        <button id="text-hide-1" onclick="document.getElementById('image').style.display='none'">Click to Hide</button>
-        <button id="text-hide-2" onclick="document.getElementById('image').style.display='initial'">Click to
-            Show</button>
-    </div>
-
-    <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
-        <button id="button-1" onclick="document.getElementById('foy-demo').innerHTML ='Hi!'">Click Here</button>
-        <p id="foy-demo"></p>
-        <button id="button-2" onclick="document.getElementById('foy-demo').innerHTML ='Hello!'">Click Here</button>
-        <button id="button-3" onclick="alert('Are you Sure')">Click</button>
-    </div>  
-    <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
-        <button onclick="window.print()">Print this page</button>
-    </div> 
-    <div class="foy-flex fow-w-300 mt-10">
-        <button id="button-2" onclick="myFunction1()">Variable</button>
-        <p id="foy-demo1"></p>
-    </div>  
+    
+   
 
     <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
     <script src="./assets/js/scope.js"></script>
@@ -59,6 +52,4 @@
             console.log(typeof object);
         }
     </script>
-</body>
-
-</html>
+<?php include 'shared/footer.php';?>
