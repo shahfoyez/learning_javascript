@@ -34,13 +34,23 @@
         <p id="foy-demo"></p>
         <button id="button-2" onclick="document.getElementById('foy-demo').innerHTML ='Hello!'">Click Here</button>
         <button id="button-3" onclick="alert('Are you Sure')">Click</button>
-    </div>
+    </div>  
     <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
         <button onclick="window.print()">Print this page</button>
-    </div>
+    </div> 
+    <div class="foy-flex fow-w-300 mt-10">
+        <button id="button-2" onclick="myFunction1()">Variable</button>
+        <p id="foy-demo1"></p>
+    </div>  
+
+
+
     <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
     <script>
-
+        function myFunction1(){
+            let var1 = "Variable 01", var2 = "Variable 02";
+            document.getElementById('foy-demo1').innerHTML = var2;
+        }
     </script>
 </body>
 
