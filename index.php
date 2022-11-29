@@ -58,7 +58,6 @@
             array.push("ibrahim");
             console.log(typeof object);
         }
-        console.log(var1);
     </script>
 </body>
 
