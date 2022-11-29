@@ -44,6 +44,9 @@
     </div>  
 
     <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
+    <script src="./assets/js/scope.js"></script>
+    <script src="./assets/js/functions.js"></script>
+
     <script>
         function myFunction1(){
             let var1 = "Variable 01", var2 = "Variable 02";
@@ -53,7 +56,7 @@
             const object = {name:"foyez", age: "24"}
             array[0] = "habib";
             array.push("ibrahim");
-            console.log(object.name);
+            console.log(typeof object);
         }
         console.log(var1);
     </script>
