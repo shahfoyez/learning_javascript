@@ -50,9 +50,10 @@
             document.getElementById('foy-demo1').innerHTML = var2;
 
             const array = ['foyez', 'arif', 'shoive'];
+            const object = {name:"foyez", age: "24"}
             array[0] = "habib";
             array.push("ibrahim");
-            console.log(array);
+            console.log(object.name);
         }
         console.log(var1);
     </script>
