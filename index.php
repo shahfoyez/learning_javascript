@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body>
+<body></body>
     <h1 id="demo" class="foy-text-center fow-w-300">Hello there</h1>
     <div>
         <button
@@ -39,7 +39,6 @@
     <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
         <button onclick="window.print()">Print this page</button>
     </div>
-
     <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
     <script>
 
