@@ -43,14 +43,18 @@
         <p id="foy-demo1"></p>
     </div>  
 
-
-
     <script src="http://localhost/Javascript/assets/js/script.js" async defer></script>
     <script>
         function myFunction1(){
             let var1 = "Variable 01", var2 = "Variable 02";
             document.getElementById('foy-demo1').innerHTML = var2;
+
+            const array = ['foyez', 'arif', 'shoive'];
+            array[0] = "habib";
+            array.push("ibrahim");
+            console.log(array);
         }
+        console.log(var1);
     </script>
 </body>
 
