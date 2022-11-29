@@ -35,7 +35,6 @@
         <button id="button-2" onclick="document.getElementById('foy-demo').innerHTML ='Hello!'">Click Here</button>
         <button id="button-3" onclick="alert('Are you Sure')">Click</button>
     </div>
-ff
     <div class="foy-flex foy-justify-space-beetween fow-w-300 mt-10">
         <button onclick="window.print()">Print this page</button>
     </div>
