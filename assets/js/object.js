@@ -31,4 +31,27 @@ document.getElementById('str_slice').innerHTML =  text.slice(5);
 document.getElementById('str_sub').innerHTML =  text.substring(7, 13);
 document.getElementById('str_replace').innerHTML =  text.replace(/NORTH/i, 'south');
 
+let searchString = "This an demo string to test string search.";
+document.getElementById('indexOf').innerHTML =  searchString.indexOf('search');
+document.getElementById('lastIndexOf').innerHTML =  searchString.lastIndexOf('demo');
+document.getElementById('search').innerHTML =  searchString.search('This');
+document.getElementById('match').innerHTML =  searchString.match('string');
+document.getElementById('matchAll').innerHTML =  Array.from(searchString.matchAll('string'));
+document.getElementById('includes').innerHTML =  searchString.includes('acn');
+document.getElementById('startsWith').innerHTML =  searchString.startsWith('This');
+document.getElementById('endsWith').innerHTML =  searchString.endsWith('earch.');
+
+let a = 10.77;
+let b = 40;
+// let x = (a+b).toString();
+// let x = (a+b).toFixed(3);
+let x = parseInt(a+b);
+
+// let x = a + b;
+console.log(x);
+document.getElementById('stringLiterals').innerHTML =  `<span>${a+b}</span>`;
+document.getElementById('numberMethod').innerHTML =  x;
+ 
+
+
 
