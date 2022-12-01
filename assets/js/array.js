@@ -18,6 +18,7 @@ const person = {
   };
 const cars = ['Volvo', 'Toyota', 'BMW', 'Honda'];
 cars[4] = "new car";
+<p id="str_length" class="foy-text-center m-0"></p>
 console.log(Array.isArray(cars));
  
  
