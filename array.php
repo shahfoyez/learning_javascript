@@ -19,6 +19,54 @@
     <script>
         const cars = ["volvo", "BMW", "Toyota"];
         const engines = ["1998", "1992", "1995"];
+        const numbers = [22, 101, 23, 120];
+        let num_sort = numbers.sort(function(a, b){
+            return a  - b;
+        });
+        // numbers.forEach(iterate);
+        
+        // function iterate(value, index, array){
+        //     console.log(value);
+        // }
+
+        // var numbers1 = numbers.map(iterate);
+        
+        // function iterate(value){
+        //     return value * 2;
+        // }
+        // console.log(numbers1);
+
+        // var numbers1 = numbers.filter(iterate);
+        
+        // function iterate(value){
+        //     return value > 30;
+        // }
+        // console.log(numbers1);
+
+        // var numbers1 = numbers.reduce(iterate);
+        
+        // function iterate(total, value){
+        //     return total + value;
+        // }
+        // console.log(numbers1);
+
+        // var numbers1 = numbers.some(iterate);
+        
+        // function iterate(value){
+        //     return value > 40;
+        // }
+        // console.log(numbers1);
+
+        var numbers1 = numbers.find(iterate);
+        
+        function iterate(value){
+            return value > 40;
+        }
+        console.log(numbers1);
+        let arif = "BIYEKORTECHAI";
+        let arif_array = Array.from(arif);
+        console.log(arif_array);
+
         const con = cars.concat(engines);
         // engines.splice(2,0, "lemon", "kiwi");
         const slice = engines.slice(1);
@@ -35,24 +83,31 @@
         cars.forEach(carsFunction);
         text += `</ul>`;
 
-        const obj = {
-            firstname: 'shah',
-            lastName: 'foyez',
-            age: 25
-        }
+        const obj = [
+            {
+                firstname: 'shah',
+                lastName: 'foyez',
+                age: 25
+            },
+            {
+                firstname: 'ali',
+                lastName: 'khan',
+                age: 30
+            },
+            {
+                firstname: 'arif',
+                lastName: 'ghani',
+                age: 22
+            }
+        ]
+        let obj_sort = obj.sort(function(a,b){
+            var a = a.age;
+            var b = b.age;
+            return b - a;
+        });
        
-        // let text = `<ul>`;
-        // for(let i=0; i<cars.length; i++){
-        //     text += `<li>${cars[i]}</li>`;
-        // }
-        // text += `</ul>`;
+        Math.max.apply(numbers);
 
-        // document.getElementById("list").innerHTML = text;
-        // document.getElementById("list").innerHTML = obj.age;
-        // document.getElementById("list").innerHTML = cars.toString();
-        document.getElementById("list").innerHTML = cars.join(" - ");
-
-
-
+        document.getElementById("list").innerHTML = num_sort;
     </script>
 <?php include 'shared/footer.php';?>
