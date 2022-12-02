@@ -4,9 +4,29 @@
             <h1 id="demo" class="foy-text-center fow-w-300 foy-m-0-a">Array</h1>
             <h1 id="demo2" class="foy-text-center fow-w-300 foy-m-0-a mt-50">String Method</h1>
             
-            <p class="foy-text-center foy-bold m-0">String Length</p>
+            <p class="foy-text-center foy-bold mt-10">String Length</p>
             <p id="str_length" class="foy-text-center m-0"></p>
-            <div id="list">
+            <div id="list" class="foy-text-center">
+                
+            </div>
+
+            <p class="foy-text-center foy-bold mt-10">Date</p>
+            <div id="new_date" class="foy-text-center">
+                
+            </div>
+
+            <p class="foy-text-center foy-bold mt-10">Math</p>
+            <div id="demo1" class="foy-text-center">
+                
+            </div>
+
+            <p class="foy-text-center foy-bold mt-10">Test</p>
+            <div id="demo2" class="foy-text-center">
+                
+            </div>
+
+            <p class="foy-text-center foy-bold mt-10">Test</p>
+            <div id="demo3" class="foy-text-center">
                 
             </div>
 
@@ -108,6 +128,27 @@
        
         Math.max.apply(numbers);
 
+        const new_date = new Date();
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const minute = 1000 * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+        const year = day * 365;
+
+        let years = Math.round(Date.now() / year);
+        // Math.
+        const today = new Date();
+        const da = today.getMonth();
+
+
+        var xyz = 10.6;
+        var xyz = Math.floor(Math.random() * 1000);
         document.getElementById("list").innerHTML = num_sort;
+        // document.getElementById("new_date").innerHTML = text;
+        // document.getElementById("new_date").innerHTML = months[new_date.getDate()];
+        document.getElementById("new_date").innerHTML = today.setMonth(today.getMonth() + 50);
+        document.getElementById("demo1").innerHTML = xyz;
+
     </script>
 <?php include 'shared/footer.php';?>
