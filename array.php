@@ -132,7 +132,26 @@
         Math.max.apply(numbers);
 
         const new_date = new Date();
-        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        // const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const months = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+
+        // var str = "January is a good month than February";
+        
+
+        function check(sentence){
+            let count = 0;
+            const letters = Array.from(sentence);
+            letters.forEach(function(value){
+                if(months.includes(value)){
+                    count++;
+                    // console.log(value);
+                }
+            }); 
+            return count;
+        }
+        let c = check("January is a good month than February");
+        console.log(c);
+        // console.log(newStr);  
 
         const minute = 1000 * 60;
         const hour = minute * 60;
