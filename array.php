@@ -29,10 +29,6 @@
             <div id="demo3" class="foy-text-center">
                 
             </div>
-            <div id="demo3" class="foy-text-center">
-                
-                </div>
-
         </div>
     </div>
     
@@ -129,7 +125,7 @@
             return b - a;
         });
        
-        Math.max.apply(numbers);
+        Math.max.apply(numbers); 
 
         const new_date = new Date();
         // const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -150,8 +146,32 @@
             return count;
         }
         let c = check("January is a good month than February");
-        console.log(c);
-        // console.log(newStr);  
+        let day1;
+        switch (new Date().getDay()) {
+        case 0:
+            day1 = "Sunday";
+            break;
+        case 1:
+            day1 = "Monday";
+            break;
+        case 2:
+            day1 = "Tuesday";
+            break;
+        case 3:
+            day1 = "Wednesday";
+            break;
+        case 4:
+            day1 = "Thursday";
+            break;
+        case 5:
+            day1 = "Friday";
+            break;
+        case  6:
+            day1 = "Saturday";
+        }
+        console.log(day1);
+
+        console.log(Boolean(10>2));  
 
         const minute = 1000 * 60;
         const hour = minute * 60;
@@ -162,8 +182,40 @@
         // Math.
         const today = new Date();
         const da = today.getMonth();
+        const mapVar = new Map();
+        mapVar.set("name", "fayez");
+        mapVar.set("age", 25);
+        console.log(mapVar.get("age"));
+        // mapVar.delete("name");
+        for(const mapSingle of mapVar.entries()){
+            console.log(mapSingle);
+        }
+        // console.log(typeof mapVar);
 
 
+        mapVar.forEach(function(value, key){
+            console.log(value+key);
+        });
+        // const setVar = new Set(['a', 'b', 'c', 'd', 'a']);
+        // setVar.add('x');
+        // setVar.forEach(function(value){
+        //     console.log(value);
+        // });
+
+        // const person = {fname:"John", lname:"Doe", age:25};
+        
+        // console.log(person.age);
+
+        // for(let x of months){
+        //     console.log(x);
+        // }
+
+        // let i = 0;
+        // do{
+        //     console.log(i);
+        //     i++;
+        // }
+        // while(i <10);
         var xyz = 10.6;
         var xyz = Math.floor(Math.random() * 1000);
         document.getElementById("list").innerHTML = num_sort;
