@@ -216,8 +216,17 @@
         //     i++;
         // }
         // while(i <10);
+        var typeCheck = 44.44;
+        // var typeCheck = String(typeCheck);
+        var dt = new Date();
+        console.log(dt.getTime());
+        console.log(typeCheck.toPrecision(5));
         var xyz = 10.6;
         var xyz = Math.floor(Math.random() * 1000);
+        var matchString = "Hello there i am shah 9, 78\nthere\n is am hello";
+        var arrys = ['go', 'hf', 'ku'];
+        console.log(arrys.search('hf'));
+        console.log(matchString.match(/\s/gi));
         document.getElementById("list").innerHTML = num_sort;
         // document.getElementById("new_date").innerHTML = text;
         // document.getElementById("new_date").innerHTML = months[new_date.getDate()];
