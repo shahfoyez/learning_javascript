@@ -40,19 +40,11 @@
             }
         }
 
-        // function submitAction1() {     
-        //     // onClick="this.disabled=true; this.innerText='Sending…'; "
-        //     let  button = document.getElementById('foy_btn1');
-        //     button.innerText = 'Sending...';
-        // };
-      
         function submitAction() {     
             // onClick="this.disabled=true; this.innerText='Sending…'; "
             let  button = document.getElementById('foy_btn');
             button.disabled = true;
             button.innerText = 'Sending...';
-
-
             const array1 = {
                 name: "foyez",
                 username: 'ali'
@@ -61,24 +53,9 @@
                 fullname: function(){
                     return this.name + " " + this.username;
                 }
-            };
-            document.getElementById("p02").innerHTML = "I can display " + array2.fullname;
-
-
-            const person2 = {
-                firstName:"John",
-                lastName: "Doe"
             }
-            const person1 = {
-                fullName: function() {
-                    return this.firstName + " " + this.lastName;
-                }
-            }
-            person1.fullName.call(person2);
-
-            console.log(person1.fullName.call(person2));
+            document.getElementById("p02").innerHTML = "I can display " + array2.fullname.call(array1);
         };
-
 
         myFunction1();
         document.getElementById("p02").innerHTML = "I can display " + carName;
