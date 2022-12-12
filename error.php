@@ -7,20 +7,20 @@
 
             <input id="demo" type="text">
             <button type="button" onclick="myFunction()">Test Input</button>
-
             <p id="p01"></p>
+
+            <input id="demo1" type="text">
+            <!-- onClick="submitAction()" -->
+            <button type="button" class="foy_btn" onClick="submitAction()" id="foy_btn">Send</button>
+            <p id="p02"></p>
         </div>
     </div>
-    
-
     <script>
-        var arrys = ['go', 'hf', 'ku'];
-        console.log(arrys.search('hf'));
-
         function myFunction(){
             const message = document.getElementById("p01");
             message.innerHTML = "";
-            let x = document.getElementById("demo");
+            let x = document.getElementById("demo").value;
+            // console.log(x);
             try{
                 if(x == ''){
                     throw "is empty";
@@ -39,10 +39,52 @@
                 document.getElementById("demo").value = "";
             }
         }
-        try{
-            alertff("Welcome");
-        }catch(err){
-            document.getElementById("demo").innerHTML = err;
+
+        // function submitAction1() {     
+        //     // onClick="this.disabled=true; this.innerText='Sending…'; "
+        //     let  button = document.getElementById('foy_btn1');
+        //     button.innerText = 'Sending...';
+        // };
+      
+        function submitAction() {     
+            // onClick="this.disabled=true; this.innerText='Sending…'; "
+            let  button = document.getElementById('foy_btn');
+            button.disabled = true;
+            button.innerText = 'Sending...';
+
+
+            const array1 = {
+                name: "foyez",
+                username: 'ali'
+            };
+            const array2 = {
+                fullname: function(){
+                    return this.name + " " + this.username;
+                }
+            };
+            document.getElementById("p02").innerHTML = "I can display " + array2.fullname;
+
+
+            const person2 = {
+                firstName:"John",
+                lastName: "Doe"
+            }
+            const person1 = {
+                fullName: function() {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+            person1.fullName.call(person2);
+
+            console.log(person1.fullName.call(person2));
+        };
+
+
+        myFunction1();
+        document.getElementById("p02").innerHTML = "I can display " + carName;
+        
+        function myFunction1() {
+            var carName = "Volvo";
         }
     </script>
 <?php include 'shared/footer.php';?>

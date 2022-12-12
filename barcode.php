@@ -30,16 +30,62 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 <!-- onload="document.pos.barcode.focus();" -->
-<body >
+<body>
+<script>
+        // $(":input").keypress(function(event){
+        //     if (event.which == '10' || event.which == '13') {
+        //         event.preventDefault();
+        //     }
+        // });
+        (function() {
+            var textField = document.getElementById('barcode');
+
+            if(textField) {
+                textField.addEventListener('keydown', function(mozEvent) {
+                    var event = window.event || mozEvent;
+                    if(event.keyCode === 13) {
+                        event.preventDefault();
+                    }
+                });
+            }
+        })();
+        // $(document).ready(function() {
+        //     $(window).keydown(function(event){
+        //         if(event.keyCode == 13) {
+        //         event.preventDefault();
+        //         return false;
+        //         }
+        //     });
+        // });
+        
+    </script>
+<script language="javascript">var p = false;</script>
     <div class="foy-main">
         <div class="foy-container">
             <form method="POST" action="barcode.php">
-                <input type="text" name="barcode" placeholder="Barcode">
-                <input type="submit" name="submit">
+                <input type="text" name="barcode" id="barcode" placeholder="Barcode">
+                <!-- <input type="text" name="name" placeholder="Barcode"> -->
+                <button type="submit" name="submit" onsubmit="return false">Submit</button>
+
+
+                <!-- <input type="submit" name="submit" value = "submit" onClick = "javascript: p=true;"> -->
             </form>
         </div>
     </div>
-    <script>
-
-    </script>
+    <!-- <script>
+        // $(":input").keypress(function(event){
+        //     if (event.which == '10' || event.which == '13') {
+        //         event.preventDefault();
+        //     }
+        // });
+        $(document).ready(function() {
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                event.preventDefault();
+                return false;
+                }
+            });
+        });
+        
+    </script> -->
 <?php include 'shared/footer.php';?>
