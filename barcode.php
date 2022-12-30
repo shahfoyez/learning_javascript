@@ -3,6 +3,12 @@
     
     if(isset($_POST['submit'])){
         $barcode = $_POST['barcode'];
+        $image = $_FILES['image']; 
+        echo "<pre>";
+        var_dump($image);
+        echo "</pre>";
+
+        // die();
         echo $barcode;
         echo "<br>";
         $query = "INSERT INTO barcodes(barcode) VALUES ('$barcode')";
@@ -62,8 +68,9 @@
 <script language="javascript">var p = false;</script>
     <div class="foy-main">
         <div class="foy-container">
-            <form method="POST" action="barcode.php">
+            <form method="POST" action="barcode.php" enctype="multipart/form-data">
                 <input type="text" name="barcode" id="barcode" placeholder="Barcode">
+                <input type="file" name="image" id="image">
                 <!-- <input type="text" name="name" placeholder="Barcode"> -->
                 <button type="submit" name="submit" onsubmit="return false">Submit</button>
 
