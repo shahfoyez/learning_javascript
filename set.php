@@ -27,5 +27,13 @@
         setvar.forEach(function(value){
             console.log(value);
         });
+
+        myMap = new Map();
+        myMap.set('apples', 500);
+        console.log(myMap);
+        console.log(myMap.get('apples'));
+
+
+         
     </script>
 <?php include 'shared/footer.php';?>
