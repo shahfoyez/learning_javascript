@@ -13,6 +13,19 @@
         ]);
 
         setvar.add('n');
+        setvar.delete('b');
+        setvar.has('a');
+
+
+        console.dir(setvar);
+        console.log(setvar);
+
+        for(const key of setvar){
+            console.log(key);
+        }
         console.log(mapvar.values());
+        setvar.forEach(function(value){
+            console.log(value);
+        });
     </script>
 <?php include 'shared/footer.php';?>
