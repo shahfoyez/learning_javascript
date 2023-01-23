@@ -3,7 +3,7 @@
         <div class="foy-container">
             <h2>JavaScript try catch</h2>
 
-            <p>Please input a number between 5 and 10:</p>
+            <p>Ple nas fill the gap top fill the rem,aini g uiuibv </p>
 
             <input id="demo" type="text">
             <button type="button" onclick="myFunction()">Test Input</button>

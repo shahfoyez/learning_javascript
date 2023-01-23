@@ -1,7 +1,7 @@
 <?php include 'shared/header.php';?>
     <div class="foy-main">
         <div class="foy-container">
-            <h1 id="demo" class="foy-text-center fow-w-300 foy-m-0-a">Array</h1>
+            <h1 id="demo" class="foy-text-center fow-w-300 foy-m-0-a"> </h1>
             <h1 id="demo2" class="foy-text-center fow-w-300 foy-m-0-a mt-50">String Method</h1>
             
             <p class="foy-text-center foy-bold mt-10">String Length</p>
