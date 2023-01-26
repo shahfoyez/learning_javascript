@@ -19,6 +19,11 @@
         const nm = (n, m ) => n*m;
         var m = nm(2,5);
         console.log(m);
+        maxNum = max(1,2,3,5,4,9,6,7);
+        function max(){
+            console.log(arguments);
+        }
+
         // const setvar = new Set(['a', 'b', 'a', 'd']);
         // const mapvar = new Map([
         //     ["firstName", 'shah'],
