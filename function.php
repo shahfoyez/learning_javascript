@@ -23,6 +23,31 @@
         function max(){
             console.log(arguments);
         }
+        const name = {
+            fullname: "Shah Ali",
+            myname: function(){
+                return this.fullname;
+            }
+        }
+        const name1 = {
+            fullname: "Shah Fayez"
+        }
+        const name11 = {
+            fullname: "Shah Fayez Ali"
+        }
+        console.log(name.myname.bind(name11));
+
+        const add = (function () {
+            let counter = 0;
+            return function () {
+                counter += 1; 
+                return counter;
+            }
+        })();
+        console.dir(add());
+        console.dir(add());
+
+
 
         // const setvar = new Set(['a', 'b', 'a', 'd']);
         // const mapvar = new Map([
