@@ -18,7 +18,7 @@ function progress(callback){
     console.log('Course on progress...');
     const promise = new Promise(function(resolve, reject){
         setTimeout(function(){
-            if(marks >= 80){
+            if(marks >= 70){
                 resolve();
             }else{
                 reject('You don not have enough marks');
@@ -39,43 +39,30 @@ function getCertificate(callback){
     return promise;
 }
 
-enroll()
-    .then(progress)
-    .then(getCertificate)
-    .then(function(value){
-        console.log(value);
-    })
-    .catch(function(err){
+async function course(){
+    try{
+        await enroll();
+        await progress();
+        const message = await getCertificate();
+        console.log(message);
+    }catch(err){
         console.log(err);
-    });
+    }
+}
+course();
 
-// promise definition / producing code
-// const promise = new Promise(function(resolve, reject){
-//     setTimeout(function(){
-//         if( status ){
-//             resolve('Task 2');
-//         }else{
-//             reject('Failed');
-//         }
-//     }, 2000);
-// });
-// // promise call / consuming code
-// promise
+// enroll()
+//     .then(progress)
+//     .then(getCertificate)
 //     .then(function(value){
 //         console.log(value);
 //     })
 //     .catch(function(err){
 //         console.log(err);
-//     })
- 
-// console.log("Task 3");
+//     });
 
-// function hello1(){
-//     console.log('Task 1');
-// };
-// function hello2(){
-//     console.log('Task 2');  
+
+// async function hello(){  m
+//     return "hello world!";
 // }
-// function hello3(){
-//     console.log('Task 3');
-// }
+// console.log(hello());
