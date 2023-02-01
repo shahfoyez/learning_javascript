@@ -84,3 +84,23 @@ body{
 .foy-bold{
     font-weight: bold;
 }
+.foy_anchor{
+    color: green;
+}
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+}
+#animation_container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+}
+.foy_button{
+    padding: 20px; 
+    background: green;
+    color: #ffffff;
+}
