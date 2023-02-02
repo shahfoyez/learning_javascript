@@ -98,6 +98,7 @@ body{
     height: 400px;
     position: relative;
     background: yellow;
+    margin: 0 auto;
 }
 .foy_button{
     padding: 20px; 
