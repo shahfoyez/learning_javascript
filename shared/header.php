@@ -11,4 +11,4 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
-<body onunload='console.log("Unloaded")'>
+<body>
