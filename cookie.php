@@ -11,7 +11,7 @@
                 <input 
                     type="button" 
                     value="Get Cookie" 
-                    onclick="getCookie('var_1')
+                    onclick="alert(getCookie('var_1'))
                 ">
                 <p id="cookie_1"></p>
                 <p id="cookie_2"></p>
@@ -31,7 +31,19 @@
             console.log( expires );
         }
         function getCookie(key){
+            let name = key+"=";
             console.log(document.cookie);
+            let ca = document.cookie.split(";");
+            for(var i=0; i<ca.length; i++){
+                let c = ca[i];
+                while(c.charAt(0) === " "){
+                    c = c.substr(1); 
+                }
+                if(c.indexOf(name) === 0){
+                    return c.substring(name.length);
+                }
+            }
+            return "";
         }
 
 
