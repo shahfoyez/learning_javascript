@@ -45,8 +45,6 @@
             }
             return "";
         }
-
-
         (function(){
             document.cookie = "username=John Doe; expires=Sunday, 14 Feb 2023 12:00:00 UTC; path=/";
             console.log();
